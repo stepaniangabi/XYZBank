@@ -1,0 +1,18 @@
+{
+[
+  {
+    "firstNameValue": "Alex",
+    "lastNameValue": "Dorha",
+    "postCodeValue": "E10AB",
+    "currencyValue": "Dollar",
+    "emailValue": "test@test.com"
+  },
+  {
+    "firstNameValue": "Alex2",
+    "lastNameValue": "Dorha2",
+    "postCodeValue": "E10AB2",
+    "currencyValue": "Dollar2",
+    "emailValue": "test@test.com"
+  }
+]
+}
