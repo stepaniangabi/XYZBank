@@ -56,14 +56,23 @@ public class CustomerPage extends BasePages {
         int i = 0;
         while (i<firstNameValueList.size()){
             firstNameElement.sendKeys(firstNameValueList.get(i));
+            LogUtility.infoLog("The user fills first name field with value: " + firstNameValueList.get(i));
+
             lastNameElement.sendKeys(lastNameValueList.get(i));
+            LogUtility.infoLog("The user fills last name field with value: " + lastNameValueList.get(i));
+
             postCodeElement.sendKeys(postCodeValueList.get(i));
+            LogUtility.infoLog("The user fills post code field with value: " + postCodeValueList.get(i));
+
             submitCustomerElement.click();
+            LogUtility.infoLog("The user clicks on Submit button");
 
             Alert customerAlert = driver.switchTo().alert();
             String customerAlertText = customerAlert.getText();
             System.out.println(customerAlertText);
             customerAlert.accept();
+            LogUtility.infoLog("The user accept the customer alert");
+
             i++;
         }
 
@@ -71,6 +80,7 @@ public class CustomerPage extends BasePages {
 
     public void openAccount() {
         openAccountElement.click();
+        LogUtility.infoLog("The user clicks on Open Account button ");
     }
 
 }
